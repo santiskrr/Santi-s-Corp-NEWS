@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let currentIndex = 0;
+
+
+        let autoplayInterval = null;
+
+        function startAutoplay(interval) {
+        stopAutoplay(); // Detiene cualquier autoplay anterior para evitar múltiples intervalos.
+        autoplayInterval = setInterval(() => {
+            navigate(1); // Navega a la siguiente imagen cada intervalo de tiempo.
+        }, interval);
+        }
+
+                function navigate(direction) {
+                const galleryContainer = document.querySelector('.gallery-container');
+                const totalImages = document.querySelectorAll('.gallery-item').length;
+                
+                currentIndex = (currentIndex + direction + totalImages) % totalImages;
+                const offset = -currentIndex * 100;
+                
+                galleryContainer.style.transform = `translateX(${offset}%)`;
+                }
+        function stopAutoplay() {
+        clearInterval(autoplayInterval);
+        }
+        // Iniciar autoplay con un intervalo de 3 segundos.
+        startAutoplay(4000);
+    </script>
+</head>
+<body>
+    <section id="gallery">
+        <div class="gallery-container">
+            <figure class="gallery-item">
+                <img src="image1.jpg" alt="Imagen 1">
+            </figure>
+            <figure class="gallery-item">
+                <img src="image2.jpg" alt="Imagen 2">
+            </figure>
+            <figure class="gallery-item">
+                <img src="image3.jpg" alt="Imagen 3">
+            </figure>
+            <figure class="gallery-item">
+                <img src="image3.jpg" alt="Imagen 3">
+            </figure>
+            <figure class="gallery-item">
+                <img src="image3.jpg" alt="Imagen 3">
+            </figure>
+            <figure class="gallery-item">
+                <img src="image3.jpg" alt="Imagen 3">
+            </figure>
+
+            <!-- ... otras imágenes ... -->
+        </div>
+       
+    </section>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script>
+        let currentIndex = 0;
+
+
+        let autoplayInterval = null;
+
+        function startAutoplay(interval) {
+        stopAutoplay(); // Detiene cualquier autoplay anterior para evitar múltiples intervalos.
+        autoplayInterval = setInterval(() => {
+            navigate(1); // Navega a la siguiente imagen cada intervalo de tiempo.
+        }, interval);
+        }
+
+                function navigate(direction) {
+                const galleryContainer = document.querySelector('.gallery-container');
+                const totalImages = document.querySelectorAll('.gallery-item').length;
+                
+                currentIndex = (currentIndex + direction + totalImages) % totalImages;
+                const offset = -currentIndex * 100;
+                
+                galleryContainer.style.transform = `translateX(${offset}%)`;
+                }
+        function stopAutoplay() {
+        clearInterval(autoplayInterval);
+        }
+        // Iniciar autoplay con un intervalo de 3 segundos.
+        startAutoplay(2000);
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="fondo" style="background-image: url(fondos/fondopag1.jpg); background-repeat: no-repeat;">
+    <h1><a id="Akatsuki" href="home.html">Ò Diário</a></h1>
+        
+        <h1 class ="titulo">Naruto superó a Dragon Ball como el anime más visto del mundo</h1>
+
+        <p>Naruto se impone con 330 millones de horas visualizadas en 2024 superando a Dragon Ball, One piece y muchos mas, puede que esta gran cantidad de horas vistas se deba a que recientemente luego de 15 largos años se comenzo el doblaje de los capitulos restantes que quedaban sin doblar en la serie que son alrededor de unos 150 capitulos.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2upuBiEiXDk?si=dfDfQ_euCIX1Bn8x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section id="gallery">
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img src="imgnaruto/image1.jpg" alt="Imagen 1">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="imgnaruto/image2.jpg" alt="Imagen 2">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="imgnaruto/image3.jpg" alt="Imagen 3">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="imgnaruto/image4.JPG" alt="Imagen 3">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="imgnaruto/image5.JPG" alt="Imagen 3">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="imgnaruto/image6.jpg" alt="Imagen 3">
+                </figure>
+            </div>
+        </section>
+</body>

@@ -1,0 +1,339 @@
+H1 { text-align: center;
+    margin-bottom: 50px;
+}
+
+.login{ /*LOGIN TEMPORALMENTE DESACTIVADO*/
+    background-color: rgb(26, 26, 26);
+    border-style: groove;
+    border-color: #ffffff;
+    padding: 10px;
+    width: 300px;
+    border-radius: 6px;
+    border-color: #00dd9b;
+    margin-left: 509px;
+}
+
+h2 {color: #00dd9b;
+    font-family:fantasy;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+label{color: #ffffff;
+
+} /*Color Indicador Nombre Input*/
+
+body{
+
+    background: linear-gradient(to left, #4c00ff, #ff0000);
+}
+
+#diario{
+    text-shadow: 2px 0px 20px #ffffff;
+    text-decoration: underline;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);background-image: url(fondos/akatsuki.gif);
+    background-position: 100%;
+    background-size: 65%;
+    border-style: groove;
+    border-color: tomato;
+    padding: 0px 10px 0px 10px;
+    margin: 5px 510px 5px 525px;
+    border-radius: 10px;
+    
+}
+
+.imagen{
+    height: 200px;
+    width: 300px;
+    border-radius: 10%;
+    
+}
+
+.divPrincipal{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+   .divnaruto{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(255, 151, 16);
+    p {color: rgb(255, 145, 0); text-align: center;font-family: fantasy;}
+    background-color: black;
+
+   }
+
+   .divnaruto:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+
+   .divblackhole{
+    
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(206, 206, 206);
+    background-color: black;
+    p {color: rgb(206, 206, 206); text-align: center;font-family: fantasy}
+
+   }
+
+   .divblackhole:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+   .majorana{
+    
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(233, 178, 28);
+    background-color: black;
+   }
+
+   .majorana:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+
+   .majorana p {color: rgb(216, 184, 0); text-align: center;font-family: fantasy;}
+
+   .asteroide{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(54, 40, 136);
+    background-color: rgb(0, 0, 0);
+    p {color: rgb(41, 179, 137);text-align: center;font-family: fantasy};
+   }
+
+   .asteroide:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+   .marte2029{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(177, 86, 33);
+    background-color: black;
+    p {color: rgb(255, 139, 6); text-align: center;font-family: fantasy};
+   }
+
+   .marte2029:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+   .nvidia5090{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(1, 192, 10);
+    p {color: rgb(34, 168, 0); text-align: center;font-family: fantasy};
+    background-color: black;
+   }
+
+   .nvidia5090:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+   .gta{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(168, 26, 235);
+    background-color: black;
+   }
+
+   .gta:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+   .gta p {
+    color: rgb(168, 26, 235);
+     text-align: center;
+     font-family: fantasy; 
+     font-size: large;}
+
+   .ovnis{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(126, 126, 126);
+    background-color: black;  
+   }
+
+   .ovnis:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+   .ovnis p {color: rgb(158, 158, 158);
+     text-align: center;
+     font-family: fantasy;
+     font-size: large;
+    }
+
+
+
+   .suiza{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(2, 150, 14);
+    background-color: black;
+    p {color: rgb(5, 158, 0); text-align: center;font-family: fantasy;font-size: large};
+   }
+
+   .suiza:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+   }
+
+   .dune{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(255, 106, 6);
+    p {color: rgb(255, 97, 6); text-align: center;font-family: fantasy;font-size: large};
+    background-color: rgb(0, 0, 0);
+   }
+
+   .dune:hover{
+    
+    padding:20px  ;
+    background-color: #000000;
+    margin:38px
+
+   }
+
+   .switch2{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(255, 6, 6);
+    p {color: rgba(255, 255, 255, 0.89); text-align: center;font-family: fantasy;font-size: large};
+    background-color: black;
+   }
+
+   .switch2:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+   .trump{
+    display: block;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 20px;
+    border-color: rgb(255, 137, 59);
+    p {color: rgb(255, 149, 88); text-align: center;font-family: fantasy;font-size: large};
+    background-color: black;
+   }
+
+   .trump:hover{
+
+    padding: 15px;
+    background-color: #000000;
+    margin: 38px;
+
+   }
+
+   .redes{
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px 500px 10px 510px ;
+    text-align: center;
+
+
+   }
+
+   .iconos{
+    background-color: #ffffff;
+    border-radius: 10px;
+
+
+   }
+
